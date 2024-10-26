@@ -1,0 +1,80 @@
+# API de Usuarios
+
+GET http://localhost:3000/usuarios
+
+###
+
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+
+{
+    "id":4,
+    "nombre": "Nombre Usuario",
+    "email": "usuario@example.com"
+}
+
+###
+
+GET http://localhost:3000/usuarios/1
+
+###
+
+PATCH http://localhost:3000/usuarios/1
+Content-Type: application/json
+
+{
+    "id":1,
+    "nombre": "Nuevo Nombre",
+    "email": "nuevo_email@example.com"
+}
+
+###
+
+DELETE http://localhost:3000/usuarios/1
+
+###
+
+# API de Canciones
+POST http://localhost:3000/canciones
+Content-Type: application/json
+
+{
+    "id":5,
+    "nombre": "Nombre Canción",
+    "artista": "Nombre Artista",
+    "album": "Nombre Álbum",
+    "anio": 2023
+}
+
+###
+
+GET http://localhost:3000/canciones
+
+###
+
+GET http://localhost:3000/canciones/2
+
+###
+
+GET http://localhost:3000/canciones/artista/Ed Sheeran
+###
+
+GET http://localhost:3000/canciones/titulo/Rolling in the Deep
+
+###
+
+PATCH  http://localhost:3000/canciones/2
+Content-Type: application/json
+
+{
+    "id":2,
+    "nombre": "Nuevo Nombre Canción",
+    "artista": "Nuevo Nombre Artista",
+    "album": "Nuevo Nombre Álbum",
+    "anio": 2024
+}
+
+###
+
+DELETE http://localhost:3000/canciones/1
+

@@ -1,8 +1,6 @@
 export class UsuariosModel {
     id: number;
-    nombre: string;
-    apellido: string;
-    edad: number;
+    nombre: string; 
     email: string;
-    password: string;
+    
 }

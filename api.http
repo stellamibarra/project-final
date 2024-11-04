@@ -19,7 +19,7 @@ GET http://localhost:3000/usuarios/1
 
 ###
 
-PATCH http://localhost:3000/usuarios/1
+PUT http://localhost:3000/usuarios/3
 Content-Type: application/json
 
 {
@@ -63,7 +63,7 @@ GET http://localhost:3000/canciones/titulo/Rolling in the Deep
 
 ###
 
-PATCH  http://localhost:3000/canciones/2
+PUT  http://localhost:3000/canciones/2
 Content-Type: application/json
 
 {
